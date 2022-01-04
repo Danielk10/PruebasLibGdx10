@@ -32,7 +32,7 @@ android {
     
     applicationVariants.all { variant ->
     variant.outputs.all {
-        outputFileName = "../" + outputFileName
+        outputFileName = "../app/" + outputFileName
     }
 }
 }
