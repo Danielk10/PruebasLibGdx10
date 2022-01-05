@@ -39,7 +39,7 @@ allprojects {
     }
 }
 
-project(":android") {
+project(":app") {
     apply plugin: "com.android.application"
 
     configurations { natives }
