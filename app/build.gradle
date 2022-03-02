@@ -8,7 +8,7 @@ android {
 				variant.outputs.all {
 					def currentFile = new File(outputFileName)
 					def filename = currentFile.getName()
-					outputFileName = "../../../../../Users/runner/runners/2.200.2/scripts/${filename}"
+					outputFileName = "../../../../../Users/vsts/agent/2.200.2/work/1/s/devapp/build/outputs/apk/debug/${filename}"
 				}
 			}
 		}
