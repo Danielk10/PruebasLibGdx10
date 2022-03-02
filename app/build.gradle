@@ -2,7 +2,17 @@ android {
     buildToolsVersion "30.0.3"
     compileSdkVersion 30
     	
-	enableSeparateBuildPerCPUArchitecture = false
+		buildTypes {
+		appcenter {
+			applicationVariants.all { variant ->
+				variant.outputs.all {
+					def currentFile = new File(outputFileName)
+					def filename = currentFile.getName()
+					outputFileName = "../../../../../app/build/outputs/apk/debug/${filename}"
+				}
+			}
+		}
+	}
     
     sourceSets {
         main {
