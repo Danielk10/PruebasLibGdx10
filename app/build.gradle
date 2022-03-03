@@ -5,8 +5,6 @@ android {
 	buildTypes {
 	
 	
-	buildTypes {
-	
 		release {
 			applicationVariants.all { variant ->
 				variant.outputs.all {
