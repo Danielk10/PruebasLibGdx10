@@ -1,26 +1,6 @@
 android {
     buildToolsVersion "30.0.3"
-    compileSdkVersion 30
-
-	buildTypes {
-	
-	
-		release {
-			applicationVariants.all { variant ->
-				variant.outputs.all {
-					def currentFile = new File(outputFileName)
-					def filename = currentFile.getName()
-					outputFileName = "../../../../../build/outputs/apk/release/app-release.apk"
-				}
-			}
-		}
-	
-
-		
-		
-	}
-
-
+    compileSdkVersion 31
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -28,7 +8,7 @@ android {
             aidl.srcDirs = ['src']
             renderscript.srcDirs = ['src']
             res.srcDirs = ['res']
-            assets.srcDirs = ['assets']
+            assets.srcDirs = ['../assets']
             jniLibs.srcDirs = ['libs']
         }
 
@@ -38,8 +18,8 @@ android {
     }
     defaultConfig {
         applicationId "com.diamon.prueba"
-        minSdkVersion 21
-        targetSdkVersion 30
+        minSdkVersion 14
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
     }
@@ -49,9 +29,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    
-    
-
 }
 
 

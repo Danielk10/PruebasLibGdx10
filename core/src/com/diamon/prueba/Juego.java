@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.ScreenUtils;
 
-public class PruebasLibGdx10 extends ApplicationAdapter {
+public class Juego extends ApplicationAdapter {
 	SpriteBatch batch;
 	Texture img;
 	
